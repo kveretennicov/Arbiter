@@ -112,7 +112,7 @@ Alternatively, you can decorate your task functions ahead of time.::
 
     from arbiter.utils import retry
 
-    @retry(retries=5, delay=timedelta=(10), conditions=[cond])
+    @retry(retries=5, delay=timedelta(10), conditions=[cond])
     def myfunc():
         ...
 
